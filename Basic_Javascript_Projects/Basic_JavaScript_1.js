@@ -14,7 +14,7 @@ document.getElementById("demo").innerHTML=res;
 var b= "This was a little easier" + " thank the other method I used " + "below with the button.";
 document.write(b);
 
-var pets= "The Wolf Pack", Cat="Jazz", Dog="Deku";
+var pets= "Household Pets", Cat="Jazz", Dog="Deku";
 document.write(Dog);
 
 var pupper="all dogs are good boys";
