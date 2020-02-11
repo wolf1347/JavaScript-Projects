@@ -1,5 +1,6 @@
 function DnD_Dictionary() {
     var PlayerCharacter = {
+        Name:"Taako",
         Race:"Elf",
         Class:"Wizard",
         Alignment:"True Neutral",
