@@ -1,7 +1,7 @@
-var A="Cat";
-var B="Dog";
 
 function CatDog() {
+    var A="Cat";
+    var B="Dog";
     document.write(A+B);
 }
 
@@ -11,7 +11,7 @@ function changeColor(newColor) {
 }
 
 function myFunction() {
-    var sentence = "I am learning";
-    sentence +=" a lot from this book!";
+    var sentence = "A sentence";
+    sentence +=" + operator should now display";
     document.getElementById("Concatenate").innerHTML = sentence;
 }
