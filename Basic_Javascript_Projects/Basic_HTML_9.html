@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script src="Javascript/Basic_JavaScript_9.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Basic _CSS_1.css"
+
+<!-- This is the timer practice-->
+
+    <p>How many seconds would you like to set the alarm for?</p>
+    <input id="seconds" value="" />
+    <button onclick="countdown()">Click Here</button>
+    <p id="timer"></p>
+
+<!-- Starting the Slideshow Practice-->
+
+<div class="slideshow-container">
+    
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="Images/Deku1.jpg" style="width:100%">
+        <div class="text">Deku in Crested Butte</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="Images/Deku2.jpg" style="width:100%">
+        <div class="text">Deku in Crested Butte</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="Images/Deku3.jpg" style="width:100%">
+        <div class="text">Deku in Crested Butte</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="Images/Deku4.jpg" style="width:100%">
+        <div class="text">Deku in Crested Butte</div>
+    </div>
+
+<!-- The next and previous buttons -->
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+</body>
+</html>
