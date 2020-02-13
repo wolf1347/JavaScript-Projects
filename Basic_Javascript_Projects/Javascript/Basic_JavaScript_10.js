@@ -66,3 +66,37 @@ document.write (x);
 }
 document.write("<br>" + x);
 
+let cat = {
+    breed: "Domestic ",
+    coat: "short hair ",
+    color: "cream ",
+    name: "Sweet Pea ",
+    description : function() {
+        return "The youngest cat is named " + cat.name + "he is a " + cat.color + "colored " + cat.breed + cat.coat;
+    }
+};
+document.getElementById("cat_description").innerHTML = cat.description();
+
+function break_Function() {
+var text = ""
+var i;
+for (i = 0; i < 5; i++) {
+    if (i === 3) {
+        break;
+    }
+    text +="The Count says  " + i + " ah ah ah" + "<br>";
+    }  
+document.getElementById("BreakExample").innerHTML = text;
+}
+
+function continue_Function() {
+    var text = ""
+    var j;
+    for (j = 0; j < 5; j++) {
+        if (j === 3) {
+            continue;
+        }
+        text +="The Count says  " + j + " ah ah ah" + "<br>";
+        }  
+    document.getElementById("ContinueExample").innerHTML = text;
+    }
