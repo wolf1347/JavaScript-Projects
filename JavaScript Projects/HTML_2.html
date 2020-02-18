@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+</head>
+<body>
+    <div class="container">
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First Name</label><br><br>
+        </div>
+        <div class="col-75">
+            <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+        </div>
+    </div>  
+        <div class="row">
+            <div class="col-25">
+            <label for="lname">Last Name</label><br><br>
+        </div>
+        <div class="col-75">
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="email">Email</label><br><br>
+        </div>
+        <div class="col-75">
+            <input type="text" id="email" name="email" Placeholder="Email Address"><br><br>
+        </div>
+    </div>  
+    <div class="row">
+            <input type="submit" value="Submit"><br><br>
+    </div>    
+    </form>
+    </div>
+
+    <br>
+
+        <p>Click below for a random pop up on the below food group choices</p>
+
+    <ol>
+        <li onclick="displayType(this)" id="veggie" data-food_item = "green bean">vegetable</li>
+        <li onclick="displayType(this)" id="fruit" data-food_item = "raspberry">fruit</li>
+        <li onclick="displayType(this)" id="protein" data-food_item = "chicken">meat</li>    
+    </ol>
+
+    <script src="Javascript/JavaScript_2.js"></script>
+</body>
+</html>
