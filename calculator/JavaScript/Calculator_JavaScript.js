@@ -62,7 +62,7 @@ function Update_Display() {
     display.value = Calculator.Display_Value;
 }
 
-Update_Display() ;
+Update_Display();
 const keys = document.querySelector ('.calculator-keys');
 keys.addEventListener('click', (event) => {
     const { target } = event;
@@ -85,5 +85,5 @@ keys.addEventListener('click', (event) => {
         return;
     }
     Input_Digit(target.value);
-    Update_Display;
+    Update_Display();
 })
