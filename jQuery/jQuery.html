@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src= https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+    </head>
+
+    <body>
+        <script>
+            $(document).ready(function(){
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='p1'>Click me and I will make h1 fade out</p>\
+                                <p id='p2'>Click me and I will make h1 fade back in</p>\
+                                <p id='p3'>Click me and I will hide h1</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                $("#p1").css({"color":"coral"});
+                $("#p2").css({"color":"steelblue"});
+                $("#p3").css({"color":"teal"});
+                $("#p3").click(function() {
+                    $("h1").hide();
+                });
+                $("#p1").click(function() {
+                    $("h1").fadeOut( 1200 );
+                })
+                $("#p2").click(function() {
+                    $("h1").fadeIn( 1200 );
+                })
+            });
+        </script>
+    </body>
+</html>

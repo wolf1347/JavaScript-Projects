@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-    <head>
-            <meta charset="UTF-8">
-    </head>
-    <body>
-        <script>
-            A= "Always ";
-            B= "remember: ";
-            document.write(A+B);
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML DOM practice</title>
+</head>
+<body>
 
-            X= "you ";
-            Y= "are ";
-            document.write(X+Y);
+<p>Click the below button to return the name of this page.</p>
+<button onclick="myFunction()">Click Here</button>
+<p id="test"></p>
 
-            M= "unique ";
-            N= "just like everyone else.";
-            document.write(M+N);
-        </script>
-    </body>
+<script>
+    function myFunction() {
+        var x = document.title;
+        document.getElementById("test").innerHTML = x;
+    }
+</script>
+
+</body>
+</html>
