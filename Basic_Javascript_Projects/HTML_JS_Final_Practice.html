@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML template</title>
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_JS_Final_Practice.css">
+    </head>
+    <body>
+
+        <div class="sticky">
+            <button class="open-button" onclick="openForm()">Open Form</button>
+            
+            <div class="form-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Contact Us</h1>
+            
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Jane" name="fname" required>
+    
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Doe" name="lname" required>
+    
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="example@email.com" name="email" required>
+    
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+        </div>
+
+        <div class="main" id="section1">
+            <h1>Section 1</h1>
+            <a href="#section2">Click me for a smooth journey on down to section 2</a>
+        </div>
+
+        <h2>Contact Form</h2>
+        <form action="/action_page.php">
+            <label for "fname">First Name</label><br>
+            <input type="text" id="fname" value="" placeholder="Jane">
+            <br>
+            <label for "lname">Last Name</label><br>
+            <input type="text" id="lname" value="" placeholder="Doe">
+            <br>
+            <label for "pnumber">Phone Number</label><br>
+            <input type="text" id="pnumber" value="" placeholder="(xxx)xxx-xxxx">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br><br>
+
+        <div class="move"></div>
+
+        <br><br>
+
+    <div class="zoom">
+        <input type="checkbox" id="zoomCheck">
+            <label for="zoomCheck">
+                <img src="Images/BeeTypes.gif" width="500px" height="425px">
+            </label>
+    </div>  
+
+        <h1>Automatic Slideshow of Minecraft friendly mobs</h1><br>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="Images/chicken.png" style="width:60%">
+              <div class="text">Chicken</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="Images/Cow.png" style="width:60%">
+              <div class="text">Cow</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="Images/Pig.png" style="width:60%">
+              <div class="text">Pig</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/Sheep.png" style="width: 60%">
+                <div class="text">Sheep</div>
+              </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+
+    <div class="main" id="section2">
+        <h1>Section 2</h1>
+        <a href="#section1">Click me for a smooth journey back up to section 1</a>
+    </div>
+
+        <script src="Javascript/JS_Final_Practice.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

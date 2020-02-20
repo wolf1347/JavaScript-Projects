@@ -1,0 +1,220 @@
+/* Smooth scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#section1 {
+    height: 100px;
+    width: 75%;
+    background-color: palevioletred;
+    color: papayawhip;
+    padding-left: 20%;
+}
+
+#section2 {
+    height: 100px;
+    width: 75%;
+    background-color: teal;
+    color: papayawhip;
+    padding-left: 20%;
+}
+
+a {
+    color: whitesmoke;
+}
+
+h1 {
+    text-shadow: 2px 2px slategray;
+}
+
+/* the popup form */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background-color: teal;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 280px;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px solid slategray;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: gainsboro;
+  
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: slateblue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .btn:hover {
+    background-color: rgb(59, 37, 204);
+}
+
+.form-container .cancel {
+  background-color: palevioletred;
+}
+
+.form-container .cancel:hover {
+    background-color: rgb(221, 36, 98);
+  }
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* the keyframe*/
+
+.move {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 5px solid midnightblue;
+    box-shadow: 8px 8px rgba(111, 130, 148,.5), 4px 4px rgba(21, 44, 65, 0.5);
+    background-color: teal;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    0% {top: 0px;}
+    25% {top:200px;}
+    75% {top:50px;}
+    100% {top:100px;}
+  }
+
+/* zoom in and out effect */
+
+  .zoom {
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 250px;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+
+  .container img {
+    margin: 100px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+  }
+
+  input[type=checkbox]:checked ~ label > img {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+
+  /* slideshow */
+
+  * {box-sizing: border-box;}
+  .mySlides {display: none;}
+  img {vertical-align:middle;}
+
+  .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+  }
+
+  .text {
+      color: midnightblue;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+  }
+
+  .numbertext {
+      color: midnightblue;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+  }
+
+  .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: teal;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+
+  .active {
+      background-color: gainsboro;
+  }
+
+  .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1} 
+  }
+
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+  /* sticky effect for the button */
+
